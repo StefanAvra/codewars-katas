@@ -1,6 +1,6 @@
 import unittest
 
-from solutions.beginner_beries_1_bchool_paperwork import paperwork
+from solutions.kyu8_beginner_beries_1_bchool_paperwork import paperwork
 
 class SampleTests(unittest.TestCase):
 
