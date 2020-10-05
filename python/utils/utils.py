@@ -14,7 +14,7 @@ def create_test_file(kata_name):
 
     if not os.path.exists(f'../tests/test_{kata_file}.py'):
         with open(f'../tests/test_{kata_file}.py', 'w') as f: 
-            content = f'import unittest\n\nfrom solutions.{kata_file} import func\n\n class SampleTests(unittest.TestCase):\n\n    def test_func(self):\n    pass\n\nif __name__ == \'__main__\':\n    unittest.main()'
+            content = f'import unittest\n\nfrom solutions.{kata_file} import func\n\nclass SampleTests(unittest.TestCase):\n\n    def test_func(self):\n    pass\n\nif __name__ == \'__main__\':\n    unittest.main()'
             f.write(content)
 
 def create_kata_files(kata_name):
